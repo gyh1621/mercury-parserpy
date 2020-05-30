@@ -1,9 +1,12 @@
 :root {
-    --nc-bg-1: #4A4A4D;
-    --nc-bg-2: #4A4A4D;
-    --nc-bg-3: #656568;
+    /*--nc-bg-1: #4A4A4D;*/
+    --nc-bg-1: #232222;
+    --nc-bg-2: #232222;
+    /*--nc-bg-3: #656568;*/
+    --nc-bg-3: #F8403A;
+    --nc-bg-4: #171514;
     --nc-tx-2: #D7D7D8;
-    --nc-font-sans: apple-system, 'Inter', -BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --nc-font-sans: -apple-system,BlinkMacSystemFont,PingFang-SC-Regular,Hiragino Sans GB,Microsoft Yahei,Arial,sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,9 +33,10 @@ h4, h5, h6 {
 
 body {
     line-height: 1.7;
-    -webkit-font-smoothing: subpixel-antialiased;
-    --paper-shadow-color: rgba(0, 0, 0, 0.2);
-    font-size: 1.1rem;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1rem;
+    color: #b8b8b8;
+
 }
 
 blockquote {
@@ -40,5 +44,35 @@ blockquote {
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
     padding-left: 1.2rem;
-    color: #B7B7B8;
+    color: #7F7F7F;
+    border-left: 2px solid var(--nc-bg-3);
+}
+
+pre {
+    background: var(--nc-bg-4);
+    border: 1px solid var(--nc-bg-4);
+    font-size: 0.9rem;
+}
+
+a {
+    border-bottom: 1px solid #893128;
+    color: #b8b8b8;
+}
+
+figcaption {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    color: #8e8787;
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    text-align: center;
 }
