@@ -1,7 +1,12 @@
-version: "2"
+version: "3"
 
 services:
-  mercury-api:
+  app:
+    build: .
+    image: mercury-server
+    ports:
+      - "80:80"
+  mercury:
     image: wangqiru/mercury-parser-api
     ports:
       - "3000:3000"

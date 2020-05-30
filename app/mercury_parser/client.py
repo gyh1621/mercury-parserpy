@@ -3,7 +3,7 @@ import json
 
 
 # default api_endpoint
-API_ENDPOINT = "http://localhost:3000/"
+API_ENDPOINT = "http://mercury:3000/"
 
 
 class MercuryParser:
