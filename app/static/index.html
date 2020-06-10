@@ -1,80 +1,99 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Reader</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-                background: #2F3640;
-            }
-            .search-box {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background: #666666;
-                height: 28px;
-                border-radius: 25px;
-                padding: 10px;
-                display: flex;
-                justify-content: space-between;
-            }
-            /*.search-box:hover > .search-txt {
-                width: 240px;
-                padding: 0 6px;
-            }*/
-            .search-box:hover > .search-btn {
-                background: white;
-                color: black;
-            }
-            .search-btn {
-                color: #eeeeee;
-                width: 28px;
-                height: 28px;
-                border-radius: 50%;
-                background: #2f3640;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                transition: 0.4s;
-                color: white;
-                cursor: pointer;
-                text-decoration: none;
-            }
-            .search-btn > i {
-                font-size: 16px;
-            }
-            .search-txt {
-                width: 500px;
-                padding: 0 6px;
-                border: none;
-                background: none;
-                outline: none;
-                padding: 0;
-                color: white;
-                font-size: 16px;
-                transition: 0.4s;
-                line-height: 40px;
-                font-weight: bold;
-            }
-        }
-        </style>
-    </head>
-    <body>
-        <form id="form" method="get" action="/parse">
-            <div class="search-box">
-                <input type="text" name="url" class="search-txt" placeholder="Input here" />
-                <a class="search-btn" id="submit">
-                <i class="fas fa-bolt" aria-hidden="true"></i>
-                </a>
-            </div>
-            <script>
-                document.getElementById("submit").onclick = function() {
-                    document.getElementById("form").submit();
+        <head>
+                <title>Reader</title>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+                <style>
+                        body {
+                                margin: 0;
+                                padding: 0;
+                                background: #2F3640;
+                        }
+                        .search-box {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                background: #666666;
+                                height: 28px;
+                                border-radius: 25px;
+                                padding: 10px;
+                                display: flex;
+                                justify-content: space-between;
+                        }
+                        .style-type {
+                            position: absolute;
+                            top: 56%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            height: 28px;
+                            padding: 10px;
+                            display: flex;
+                            justify-content: space-between;
+                            color: white;
+                        }
+                        /*.search-box:hover > .search-txt {
+                                width: 240px;
+                                padding: 0 6px;
+                        }*/
+                        .search-box:hover > .search-btn {
+                                background: white;
+                                color: black;
+                        }
+                        .search-btn {
+                                color: #eeeeee;
+                                width: 28px;
+                                height: 28px;
+                                border-radius: 50%;
+                                background: #2f3640;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                transition: 0.4s;
+                                color: white;
+                                cursor: pointer;
+                                text-decoration: none;
+                        }
+                        .search-btn > i {
+                                font-size: 16px;
+                        }
+                        .search-txt {
+                                width: 500px;
+                                padding: 0 6px;
+                                border: none;
+                                background: none;
+                                outline: none;
+                                padding: 0;
+                                color: white;
+                                font-size: 16px;
+                                transition: 0.4s;
+                                line-height: 40px;
+                                font-weight: bold;
+                        }
                 }
-            </script>
-        </form>
-    </body>
+                </style>
+        </head>
+        <body>
+                <form id="form" method="get" action="/parse">
+                        <div class="search-box">
+                                <input type="text" name="url" class="search-txt" placeholder="Input here" />
+                                <a class="search-btn" id="submit">
+                                <i class="fas fa-bolt" aria-hidden="true"></i>
+                                </a>
+                        </div>
+                        <div class="style-type">
+                            <span>style: </span>
+                            <input type="radio" id="dark" name="style" value="dark" checked>
+                            <label for="dark">dark</label>
+                            <input type="radio" id="bright" name="style" value="bright">
+                            <label for="bright">bright</label>
+                        </div>
+
+                        <script>
+                                document.getElementById("submit").onclick = function() {
+                                        document.getElementById("form").submit();
+                                }
+                        </script>
+                </form>
+        </body>
 </html>

@@ -1,0 +1,77 @@
+:root {
+    /*--nc-bg-1: #4A4A4D;*/
+    --nc-bg-1: #FFFFFF;
+    --nc-bg-2: #FFFFFF;
+    /*--nc-bg-3: #656568;*/
+    --nc-bg-3: #F8403A;
+    --nc-bg-4: #171514;
+    --nc-tx-1: #212121;
+    --nc-tx-2: #D7D7D8;
+    --nc-font-sans: -apple-system,BlinkMacSystemFont,PingFang-SC-Regular,Hiragino Sans GB,Microsoft Yahei,Arial,sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+h1 {
+    font-size: 1.5em;
+    line-height: 1.4em;
+}
+h2 {
+    font-size: 1.43em;
+}
+h3 {
+    font-size: 1.25em;
+}
+h1, h2, h3 {
+    margin-bottom: 1rem;
+    border-bottom: 0px;
+}
+h4, h5, h6 {
+    font-size: 1em;
+    margin: 1em 0;
+}
+
+body {
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1rem;
+    color: #212121;
+}
+
+blockquote {
+    padding: 0.5rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    padding-left: 1.2rem;
+    color: #212121;
+    border-left: 2px solid var(--nc-bg-3);
+}
+
+pre {
+    background: var(--nc-bg-4);
+    border: 1px solid var(--nc-bg-4);
+    font-size: 0.9rem;
+}
+
+a {
+    color: #629B69;
+}
+
+figcaption {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    color: #8e8787;
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    text-align: center;
+}
