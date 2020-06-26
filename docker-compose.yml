@@ -5,7 +5,7 @@ services:
     build: .
     image: mercury-server
     ports:
-      - "80:80"
+      - "32400:80"
   mercury:
     image: wangqiru/mercury-parser-api
     ports:
