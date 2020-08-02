@@ -24,9 +24,9 @@ def parse():
     else:
         css = url_for('static', filename='bright.css')
     return render_template('article.html',
-                           title=result['title'],
-                           content_title=result['title'],
-                           content=result["content"],
+                           title=result.get('title', 'No Title'),
+                           content_title=result.get('title', 'No Title'),
+                           content=result.get('content', str(result)),
                            css=css
                            )
 
