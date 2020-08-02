@@ -90,8 +90,15 @@
                         </div>
 
                         <script>
+                                function submit() {
+                                        var url = document.getElementsByName("url")[0].value
+                                        var style = ""
+                                        if (document.getElementById("dark").checked) style = "dark"
+                                        else style = "bright"
+                                        window.location = "/parse?url=" + url + "&style=" + style
+                                }
                                 document.getElementById("submit").onclick = function() {
-                                        document.getElementById("form").submit();
+                                        submit()
                                 }
                         </script>
                 </form>
